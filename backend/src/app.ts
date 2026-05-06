@@ -20,7 +20,26 @@ export function createServer() {
 
   // Global middlewares
   app.use(helmet());
-  app.use(cors({ origin: ['http://localhost:3000', 'http://localhost:3001'], credentials: true }));
+  const allowedOrigins = ['http://localhost:3000', 'http://localhost:3001'];
+  if (process.env.FRONTEND_URL) {
+    allowedOrigins.push(process.env.FRONTEND_URL);
+  }
+  
+  app.use(cors({ 
+    origin: (origin, callback) => {
+      if (!origin || allowedOrigins.includes(origin) || process.env.NODE_ENV !== 'production') {
+        callback(null, true);
+      } else {
+        // Fallback to allow Vercel domains dynamically if explicitly set
+        if (origin.endsWith('.vercel.app')) {
+           callback(null, true);
+        } else {
+           callback(new Error('Not allowed by CORS'));
+        }
+      }
+    }, 
+    credentials: true 
+  }));
   app.use(express.json());
   app.use(
     rateLimit({
