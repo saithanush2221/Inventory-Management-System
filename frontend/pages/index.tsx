@@ -119,7 +119,7 @@ export default function DashboardPage() {
                     <Tooltip 
                       contentStyle={{ backgroundColor: 'var(--bg-glass)', border: '1px solid var(--border)', borderRadius: 8, color: '#fff' }}
                       itemStyle={{ color: 'var(--accent-blue)' }}
-                      formatter={(val: number) => [formatCurrency(val), 'Sales']}
+                      formatter={(val: any) => [formatCurrency(Number(val) || 0), 'Sales']}
                     />
                     <Area type="monotone" dataKey="sales" stroke="var(--accent-blue)" strokeWidth={3} fillOpacity={1} fill="url(#colorSales)" />
                   </AreaChart>
