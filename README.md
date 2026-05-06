@@ -1,4 +1,4 @@
-# InvenTrack - Modern Inventory Management System
+# Inventory Management System - Modern Inventory Management System
 
 ![InvenTrack Banner](https://via.placeholder.com/1200x400/0f172a/ffffff?text=InvenTrack+Analytics+%26+Inventory)
 
