@@ -1,8 +1,8 @@
 # Inventory Management System - Modern Inventory Management System
 
-![InvenTrack Banner](https://via.placeholder.com/1200x400/0f172a/ffffff?text=InvenTrack+Analytics+%26+Inventory)
 
-InvenTrack is a comprehensive, full-stack, enterprise-grade inventory management system designed to streamline supply chain operations, track sales, manage suppliers, and provide real-time analytical dashboards.
+
+Inventory Management System is a comprehensive, full-stack, enterprise-grade inventory management system designed to streamline supply chain operations, track sales, manage suppliers, and provide real-time analytical dashboards.
 
 ## 🌟 Key Features
 
@@ -106,6 +106,8 @@ This project is built to be easily deployed to modern cloud providers:
 
 This project is open-source and available under the [MIT License](LICENSE).
 
-## 👨‍💻 Author
-
-Developed by [Thanush](https://github.com/saithanush2221).
+Devoloped by :
+Thanush
+Manasa
+Arya
+Nikitha
